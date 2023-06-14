@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waluty.Views.Screach"
+             BackgroundImageSource="backgroundimage.png">
+    <StackLayout x:Name="First">
+        <Label x:Name="Date"
+               TextColor="White"
+               FontSize="25"
+               FontAttributes="Bold"/>
+        
+
+
+        <Entry x:Name="Code"
+                   Placeholder="Podaj kod waluty"
+               PlaceholderColor="Gainsboro"
+                   TextColor="White"/>
+
+
+        <Button Text="Wyszukaj"
+                    Clicked="Takerates"
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+
+        <Label x:Name="TheFirstLabel"
+               TextColor="White"
+               FontSize="25"
+               FontAttributes="Bold"/>
+        <Label x:Name="TitleToSecondLabel"
+               TextColor="White"
+               FontSize="18"/>
+        <Frame x:Name="Frame1"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BackgroundColor="Gainsboro"
+               CornerRadius="10"
+               Padding="13"
+               HasShadow="true"
+               IsVisible="false"
+               >
+            <Label x:Name="TheSecondLabel"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+        </Frame>
+        <Label x:Name="Deatils"
+               TextColor="DeepSkyBlue"
+              
+               FontSize="17"
+               TextDecorations="Underline">
+            
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnLabelTapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waluty.Views.Details"
+             BackgroundImageSource="backgroundimage.png">
+    <StackLayout>
+        <Label Text="Wybierz datę notowania: "
+               TextColor="White"
+               FontSize="20"
+               FontAttributes="Bold"/>
+        <DatePicker x:Name="date" Format="yyyy-MM-dd" MinimumDate="2019-01-01" DateSelected="DateSelected" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold">
+        </DatePicker>
+        <Label x:Name="TitleToFirstLabel"
+               TextColor="White"
+               
+               FontSize="20"/>
+        <Frame x:Name="myFrame"
+               VerticalOptions="Center"
+               HorizontalOptions="Fill"
+               BackgroundColor="Gainsboro"
+               CornerRadius="10"
+               Padding="20"
+               IsVisible="false"
+               HasShadow="True">
+            <Label x:Name="TheFirstLabel"
+               TextColor="Black"
+                   FontAttributes="Bold"
+               FontSize="20"/>
+        </Frame>
+
+
+
+        <Frame x:Name="Frame1"
+               VerticalOptions="Center"
+               HorizontalOptions="Fill"
+               BackgroundColor="Gainsboro"
+               CornerRadius="10"
+               Padding="13"
+               HasShadow="true"
+               IsVisible="false"
+               >
+
+
+
+            <Label x:Name="TheSecondLabel"
+                   FontSize="20"
+                   FontAttributes="Bold">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span x:Name="FirstSpan" Text="" TextColor="Black"/>
+                        <Span x:Name="SecondSpan" Text=""/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Frame>
+        <Label x:Name="Wykresy"
+               Text="wykresy"
+               TextColor="DeepSkyBlue"
+              
+               FontSize="17"
+               TextDecorations="Underline">
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnLabelTapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+
+
+    </StackLayout>
+</ContentPage>

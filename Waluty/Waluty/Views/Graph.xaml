@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waluty.Views.Graph">
+   
+        <StackLayout>
+         <Label x:Name="first" />
+        <Label x:Name="second" />
+        <Button Text="5"
+                    Clicked="Get_Data"/>
+        <Button Text="10"
+                    Clicked="Get_Data"/>
+
+    </StackLayout>
+    
+</ContentPage>

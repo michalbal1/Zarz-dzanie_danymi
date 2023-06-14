@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waluty.Views.Calc"
+             BackgroundImageSource="backgroundimage.png">
+
+    <StackLayout x:Name="First">
+        <Label x:Name="Title"
+               FontSize="30"
+               FontAttributes="Bold"
+               TextColor="White"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="170" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="trade.png"
+                   HeightRequest="30"
+                   
+                   Grid.Column="1">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Change"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Picker Grid.Column="0"
+                x:Name="PickerFirst"
+                 SelectedItem="PLN"
+                Opacity="0.9"
+                BackgroundColor="Gainsboro"
+               >
+        
+               
+                
+
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>PLN</x:String>
+                    <x:String>THB</x:String>
+                    <x:String>USD</x:String>
+                    <x:String>AUD</x:String>
+                    <x:String>HKD</x:String>
+                    <x:String>CAD</x:String>
+                    <x:String>NZD</x:String>
+                    <x:String>SGD</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>HUF</x:String>
+                    <x:String>CHF</x:String>
+                    <x:String>GBP</x:String>
+                    <x:String>UAH</x:String>
+                    <x:String>JPY</x:String>
+                    <x:String>CZK</x:String>
+                    <x:String>DKK</x:String>
+                    <x:String>ISK</x:String>
+                    <x:String>NOK</x:String>
+                    <x:String>SEK</x:String>
+                    <x:String>RON</x:String>
+                    <x:String>BGN</x:String>
+                    <x:String>TRY</x:String>
+                    <x:String>ILS</x:String>
+                    <x:String>CLP</x:String>
+                    <x:String>PHP</x:String>
+                    <x:String>MXN</x:String>
+                    <x:String>ZAR</x:String>
+                    <x:String>BRL</x:String>
+                    <x:String>MYR</x:String>
+                    <x:String>IDR</x:String>
+                    <x:String>INR</x:String>
+                    <x:String>KRW</x:String>
+                    <x:String>CNY</x:String>
+                    <x:String>XDR</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+      
+        <Picker Grid.Column="2"
+                x:Name="PickerSecond"
+                SelectedItem="PLN"
+                BackgroundColor="Gainsboro"
+                Opacity="0.9"
+                >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>PLN</x:String>
+                    <x:String>THB</x:String>
+                    <x:String>USD</x:String>
+                    <x:String>AUD</x:String>
+                    <x:String>HKD</x:String>
+                    <x:String>CAD</x:String>
+                    <x:String>NZD</x:String>
+                    <x:String>SGD</x:String>
+                    <x:String>EUR</x:String>
+                    <x:String>HUF</x:String>
+                    <x:String>CHF</x:String>
+                    <x:String>GBP</x:String>
+                    <x:String>UAH</x:String>
+                    <x:String>JPY</x:String>
+                    <x:String>CZK</x:String>
+                    <x:String>DKK</x:String>
+                    <x:String>ISK</x:String>
+                    <x:String>NOK</x:String>
+                    <x:String>SEK</x:String>
+                    <x:String>RON</x:String>
+                    <x:String>BGN</x:String>
+                    <x:String>TRY</x:String>
+                    <x:String>ILS</x:String>
+                    <x:String>CLP</x:String>
+                    <x:String>PHP</x:String>
+                    <x:String>MXN</x:String>
+                    <x:String>ZAR</x:String>
+                    <x:String>BRL</x:String>
+                    <x:String>MYR</x:String>
+                    <x:String>IDR</x:String>
+                    <x:String>INR</x:String>
+                    <x:String>KRW</x:String>
+                    <x:String>CNY</x:String>
+                    <x:String>XDR</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        </Grid>
+
+        <Entry x:Name="Quantity"
+               Placeholder="Podaj ilość pieniędzy"
+                FontSize="20"
+               PlaceholderColor="Gainsboro"
+                   TextColor="White"/>
+        <Frame x:Name="Frame1"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BackgroundColor="Gainsboro"
+               CornerRadius="10"
+               Padding="13"
+               HasShadow="true"
+               IsVisible="false"
+               Opacity="0.8"
+               >
+            <Label x:Name="Label1"
+               TextColor="Black"
+               FontSize="20"
+               FontAttributes="Bold"/>
+        </Frame>
+        <Button Text="Wyszukaj"
+                    Clicked="Calculator"
+                    VerticalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"/>
+    </StackLayout>
+    
+</ContentPage>

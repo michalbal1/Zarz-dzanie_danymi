@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Waluty.Views.Table">
+    <StackLayout>
+
+
+        <ListView x:Name="CodeListView"
+                  BackgroundColor="Gainsboro"
+                  SeparatorColor="white"
+                 
+                  >
+
+            <ListView.ItemsSource>
+
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>bat (Tajlandia) Kod: THB</x:String>
+                    <x:String>dolar amerykański Kod: USD</x:String>
+                    <x:String>dolar australijski Kod: AUD</x:String>
+                    <x:String>dolar Hongkongu Kod: HKD</x:String>
+                    <x:String>dolar kanadyjski Kod: CAD</x:String>
+                    <x:String>dolar nowozelandzki Kod: NZD</x:String>
+                    <x:String>dolar singapurski Kod: SGD</x:String>
+                    <x:String>euro Kod: EUR</x:String>
+                    <x:String>forint (Węgry) Kod: HUF</x:String>
+                    <x:String>frank szwajcarski Kod: CHF</x:String>
+                    <x:String>funt szterling Kod: GBP</x:String>
+                    <x:String>hrywna (Ukraina) Kod: UAH</x:String>
+                    <x:String>jen (Japonia) Kod: JPY</x:String>
+                    <x:String>korona czeska Kod: CZK</x:String>
+                    <x:String>korona duńska Kod: DKK</x:String>
+                    <x:String>korona islandzka Kod: ISK</x:String>
+                    <x:String>korona norweska Kod: NOK</x:String>
+                    <x:String>korona szwedzka Kod: SEK</x:String>
+                    <x:String>kuna (Chorwacja) Kod: HRK</x:String>
+                    <x:String>lej rumuński Kod: RON</x:String>
+                    <x:String>lew (Bułgaria) Kod: BGN</x:String>
+                    <x:String>lira turecka Kod: TRY</x:String>
+                    <x:String>nowy izraelski szekel Kod: ILS</x:String>
+                    <x:String>peso chilijskie Kod: CLP</x:String>
+                    <x:String>peso filipińskie Kod: PHP</x:String>
+                    <x:String>peso meksykańskie Kod: MXN</x:String>
+                    <x:String>rand (Republika Południowej Afryki) Kod: ZAR</x:String>
+                    <x:String>real (Brazylia) Kod: BRL</x:String>
+                    <x:String>ringgit (Malezja) Kod: MYR</x:String>
+                    <x:String>rupia indonezyjska Kod: IDR</x:String>
+                    <x:String>rupia indyjska Kod: INR</x:String>
+                    <x:String>won południowokoreański Kod: KRW</x:String>
+                    <x:String>yuan renminbi (Chiny) Kod: CNY</x:String>
+                    <x:String>SDR (MFW) Kod: XDR</x:String>
+
+
+
+                </x:Array>
+            </ListView.ItemsSource>
+
+
+        </ListView>
+    </StackLayout>
+</ContentPage>
