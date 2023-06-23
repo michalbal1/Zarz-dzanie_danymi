@@ -37,6 +37,7 @@ namespace Waluty.Views
                     Margin = 17,
                     Padding = 10,
                     BackgroundColor = Color.Gainsboro,
+                    Opacity=0.8,
 
                     Content = new Label
                     {

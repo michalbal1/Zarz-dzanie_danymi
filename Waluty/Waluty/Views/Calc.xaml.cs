@@ -32,6 +32,7 @@ namespace Waluty.Views
 
             PickerFirst.SelectedItem = y;
             PickerSecond.SelectedItem = x;
+            Calculator(sender , e);
         }
         public async void Calculator(object sender, EventArgs e)
         {

@@ -21,14 +21,36 @@
                     Clicked="Takerates"
                     VerticalOptions="Center"
                     HorizontalOptions="CenterAndExpand"/>
-
-        <Label x:Name="TheFirstLabel"
-               TextColor="White"
-               FontSize="25"
-               FontAttributes="Bold"/>
-        <Label x:Name="TitleToSecondLabel"
-               TextColor="White"
-               FontSize="18"/>
+        <Frame x:Name="Frame2"
+       VerticalOptions="Center"
+       HorizontalOptions="FillAndExpand"
+       BackgroundColor="Gainsboro"
+       CornerRadius="10"
+       Padding="13"
+       HasShadow="true"
+       IsVisible="false"
+       Opacity="0.8">
+            <Label x:Name="TheFirstLabel"
+           TextColor="Black"
+           FontSize="25"
+           FontAttributes="Bold"
+           HorizontalOptions="Start" />
+        </Frame>
+        <Frame  x:Name="Frame3"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BackgroundColor="Gainsboro"
+               CornerRadius="10"
+               Padding="13"
+               HasShadow="true"
+               IsVisible="false"
+                Opacity="0.8">
+            <Label x:Name="TitleToSecondLabel"
+               TextColor="Black"
+               FontSize="18"
+               FontAttributes="Bold"
+               />
+        </Frame>
         <Frame x:Name="Frame1"
                VerticalOptions="Center"
                HorizontalOptions="Center"
@@ -37,10 +59,12 @@
                Padding="13"
                HasShadow="true"
                IsVisible="false"
+                Opacity="0.8"
                >
             <Label x:Name="TheSecondLabel"
                    FontSize="20"
-                   FontAttributes="Bold"/>
+                   FontAttributes="Bold"
+                    />
         </Frame>
         <Label x:Name="Deatils"
                TextColor="DeepSkyBlue"

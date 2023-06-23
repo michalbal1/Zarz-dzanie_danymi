@@ -142,7 +142,7 @@
                FontSize="20"
                FontAttributes="Bold"/>
         </Frame>
-        <Button Text="Wyszukaj"
+        <Button Text="Przelicz"
                     Clicked="Calculator"
                     VerticalOptions="Center"
                     HorizontalOptions="CenterAndExpand"/>

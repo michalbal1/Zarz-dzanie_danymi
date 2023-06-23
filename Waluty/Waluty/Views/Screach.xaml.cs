@@ -40,11 +40,13 @@ namespace Waluty.Views
 
                     
                     TheFirstLabel.Text = "Nazwa: "+data.currency+"\n" + "Kod: "+data.code+"\n"+"Kurs: " + data.rates[0].mid+"\n";
-                            
-                        
-                    
-                    
-                    
+                    Frame2.IsVisible = true;
+                    Frame3.IsVisible = true;
+
+
+
+
+
                     var difference = Math.Round(data.rates[0].mid - data.rates[1].mid , 4);
 
                     if (difference < 0)
@@ -74,6 +76,8 @@ namespace Waluty.Views
                     TitleToSecondLabel.Text = "";
                     Deatils.Text = "";
                     Frame1.IsVisible = true;
+                    Frame2.IsVisible = false;
+                    Frame3.IsVisible = false;
                     TheSecondLabel.TextColor = Color.Red;
                     TheSecondLabel.Text = "Wystąpił błąd, sprawdź poprawność kodu w tabeli";
                 }
